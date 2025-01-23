@@ -7,11 +7,11 @@ import { Card } from "@/components/Card";
 import { Badge } from "@/components/Badge";
 import Image from "next/image";
 import {Button} from "@/components/Button";
+import Link from "next/link";
 
 export default function ProjectSection() {
     return (
         <>
-           {/* Projects Section */}
       <section className="section-padding">
         <div className="container">
           <h2 className="text-4xl font-bold mb-16 gradient-text text-center">Featured Projects</h2>
@@ -44,12 +44,16 @@ export default function ProjectSection() {
                       ))}
                     </div>
                     <div className="flex gap-4">
+											<Link  href={project.link}>
                       <Button size="sm" variant="outline" className="hover-glow">
-                        <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
+                        <ExternalLink className="mr-2 h-4 w-4"/> Live Demo
                       </Button>
+											</Link>
+											<Link href={project.code}>
                       <Button size="sm" variant="outline" className="hover-glow">
                         <Code className="mr-2 h-4 w-4" /> Source Code
                       </Button>
+											</Link>
                     </div>
                     <p className="text-sm text-gray-500 mt-4">{project.date}</p>
                   </div>

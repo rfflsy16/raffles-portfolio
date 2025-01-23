@@ -8,7 +8,6 @@ import Image from "next/image";
 export default function EducationSection() {
     return (
         <>
-         {/* Education Section */}
       <section className="section-padding">
         <div className="container">
           <h2 className="text-4xl font-bold mb-16 gradient-text text-center">Education</h2>

@@ -8,7 +8,6 @@ import Link from 'next/link';
 export default function ContactSection(){
     return (
         <>
-         {/* Contact Section */}
       <section className="section-padding">
         <div className="container">
           <motion.div

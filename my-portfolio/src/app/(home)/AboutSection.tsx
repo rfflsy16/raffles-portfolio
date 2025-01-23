@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 export default function AboutSection() {
     return (
         <>
-           {/* About Section */}
       <section className="section-padding">
         <div className="container">
           <motion.div

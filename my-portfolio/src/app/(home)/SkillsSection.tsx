@@ -7,9 +7,8 @@ import { skills } from "@/constants";
 export default function SkillsSection() {
     return (
         <>
-         {/* Skills Section */}
       <section className="section-padding">
-        <div className="container">
+        <div className="container ">
           <div className="text-center mb-16">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -30,7 +29,7 @@ export default function SkillsSection() {
             transition={{ duration: 0.8 }}
             className="glass-card p-12 rounded-2xl"
           >
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 bg-gray-700/15 p-4 rounded-xl">
               {skills.map((skill, index) => (
                 <motion.div
                   key={skill.name}

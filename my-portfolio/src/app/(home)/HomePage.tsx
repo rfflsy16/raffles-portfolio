@@ -1,3 +1,6 @@
+
+
+
 import HeroSection from "./HeroSection";
 import AboutSection from "./AboutSection";
 import SkillsSection from "./SkillsSection";
@@ -6,22 +9,15 @@ import EducationSection from "./Education";
 import CertificationSection from "./Certification";
 import ContactSection from "./ContactSection";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div className="min-h-screen">
-      
       <HeroSection/>
-
       <AboutSection/>
-
       <SkillsSection/>
-
       <ProjectSection/>
-
       <EducationSection/>
-
       <CertificationSection/>
-
       <ContactSection/>
     </div>
   );
