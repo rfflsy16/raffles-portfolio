@@ -52,7 +52,7 @@ export const skills = [
       logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/jest/jest-plain.svg"
     },
     {
-      name: 'Socket.IO',
+      name: 'WebSocket',
       logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/socketio/socketio-original.svg'
     },
     {
