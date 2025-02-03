@@ -26,8 +26,10 @@ export default function ContactSection(){
                   <Mail className="mr-2 h-5 w-5" /> Email Me
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" className="hover-glow">
-                <Download className="mr-2 h-5 w-5" /> Download CV
+              <Button size="lg" variant="outline" className="hover-glow" asChild>
+                <Link href='SILABAN-RAFFLES-YOHANES-CV.pdf'>
+                <Download className="mr-2 h-5 w-5 " /> Download CV
+                </Link>
               </Button>
             </div>
           </motion.div>

@@ -18,7 +18,7 @@ export default function SkillsSection() {
               <h2 className="text-4xl font-bold mb-6 gradient-text">Tech Arsenal</h2>
               <p className="text-lg text-gray-400 max-w-2xl mx-auto">
                 Armed with a diverse set of modern technologies, I craft exceptional digital experiences.
-                Here's my tech stack that powers innovative solutions:
+                Here&apos;s my tech stack that powers innovative solutions:
               </p>
             </motion.div>
           </div>
