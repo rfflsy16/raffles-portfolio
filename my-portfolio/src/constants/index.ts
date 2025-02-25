@@ -167,3 +167,10 @@ export const certifications = [
     date: "Issued December 2024",
   }
 ];
+
+export const aiQuestions = [
+  "What are Raffles' main technical skills?",
+  "Tell me about his recent projects",
+  "What is his educational background?",
+  "What kind of developer role is he looking for?",
+];
