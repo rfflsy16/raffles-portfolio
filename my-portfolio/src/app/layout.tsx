@@ -2,6 +2,7 @@ import Background from '@/components/Background';
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import AiChats from '@/components/AiChats';
 
 const inter = Inter({ subsets: ['latin'] });
 
