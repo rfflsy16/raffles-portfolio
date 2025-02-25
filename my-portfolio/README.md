@@ -164,13 +164,13 @@
   <a href="mailto:rfflsy16@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
   </a>
-  <a href="https://www.linkedin.com/in/silaban-rafles-yohanes/">
+  <a href="https://www.linkedin.com/in/rafles-yohanes-2a66b0329/">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="https://wa.me/6281717212003">
     <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" />
   </a>
-  <a href="https://raffles-portfolio.vercel.app/">
+  <a href="https://www.rafflesy.site">
     <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white" alt="Portfolio" />
   </a>
 </div>
@@ -181,4 +181,4 @@
 </div>
 
 <!-- Scripts for extra functionality -->
-<!-- <img src="https://c4-p.ops.gh.mintter.com/v1/stars?userid=rfflsy16&count=3" style="display: none;"> -->
+<img src="https://c4-p.ops.gh.mintter.com/v1/stars?userid=rfflsy16&count=3" style="display: none;">
