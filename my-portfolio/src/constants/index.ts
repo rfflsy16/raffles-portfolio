@@ -8,6 +8,10 @@ export const skills = [
       logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
     },
     {
+      name: "Go",
+      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg"
+    },
+    {
       name: "React",
       logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
     },
@@ -28,8 +32,24 @@ export const skills = [
       logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg"
     },
     {
+      name: "MySQL",
+      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg"
+    },
+    {
+      name: "MariaDB",
+      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mariadb/mariadb-original.svg"
+    },
+    {
       name: "Next.js",
       logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg"
+    },
+    {
+      name: "Nest.js",
+      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-original.svg"
+    },
+    {
+      name: "Hono",
+      logo: "https://hono.dev/images/logo.svg"
     },
     {
       name: "Tailwind",
@@ -62,6 +82,18 @@ export const skills = [
     {
       name: 'Sequelize',
       logo: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/sequelize/sequelize-original.svg'
+    },
+    {
+      name: 'GORM',
+      logo: 'https://gorm.io/gorm.svg'
+    },
+    {
+      name: 'GCP',
+      logo: 'https://static-00.iconduck.com/assets.00/google-cloud-icon-2048x1646-7admxejz.png'
+    },
+    {
+      name: 'AWS',
+      logo: 'https://logos-world.net/wp-content/uploads/2021/08/Amazon-Web-Services-AWS-Logo.png'
     }
   ];
 
