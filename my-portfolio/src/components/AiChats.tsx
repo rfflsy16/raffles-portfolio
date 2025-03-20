@@ -194,7 +194,7 @@ export default function AiChats({ isOpen, onClose }: AiChatsProps) {
                 className={`max-w-[80%] p-4 rounded-2xl ${
                     chat.role === 'user'
                         ? 'bg-gradient-to-r from-blue-500/30 to-purple-500/30 text-blue-200 border border-blue-500/30 rounded-br-sm'
-                        : 'glass-card text-gray-200 border border-white/20 rounded-bl-sm'
+                        : 'glass-card text-gray-200 border border-white/20 rounded-bl-sm px-5 py-4'  // Added more padding
                     }`}
             >
                 {chat.isTyping && chat.content === '' ? (
