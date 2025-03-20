@@ -38,7 +38,12 @@ const Background = () => {
       mouseY = e.clientY;
     });
 
-    const drawParticle = (particle: any) => {
+    const drawParticle = (particle: { 
+      x: number;
+      y: number;
+      radius: number;
+      hue: number;
+    }) => {
       ctx.beginPath();
       const gradient = ctx.createRadialGradient(
         particle.x, particle.y, 0,

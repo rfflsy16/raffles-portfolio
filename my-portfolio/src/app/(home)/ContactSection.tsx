@@ -18,7 +18,7 @@ export default function ContactSection(){
           >
             <h2 className="text-4xl font-bold mb-8 gradient-text">Get In Touch</h2>
             <p className="text-gray-400 mb-8">
-              Interested in working together? Let's connect and create something amazing.
+              Interested in working together? Let&apos;s connect and create something amazing.
             </p>
             <div className="flex justify-center gap-4">
               <Button size="lg" className="hover-glow" asChild>
