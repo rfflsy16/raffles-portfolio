@@ -21,7 +21,7 @@ export default async function AI(messages: Message[]) {
                 'X-Title': 'Raffles Portfolio AI Assistant'
             },
             body: JSON.stringify({
-                model: 'qwen/qwq-32b:free',
+                model: 'deepseek/deepseek-r1:free',
                 messages: messages,
                 max_tokens: 2000, // Meningkatkan max_tokens dari 500 menjadi 2000
                 temperature: 0.7,
