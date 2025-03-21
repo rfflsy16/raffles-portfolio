@@ -20,9 +20,9 @@ High School – Science (MIPA)	2021 – 2024
 
 
 SKILLS
-Language: JavaScript, Typescript, SQL
+Language: JavaScript, Typescript, SQL, Go
 Front End: React , Redux, React Native, HTML & CSS, Apollo Client, Tailwind, Next.js, Expo, Vite
-Back End: Node JS, Bun, Nest, Hono, Elysia, Express, Sequelize, PostgreSQL, MySQL, MariaDB, GraphQL, Apollo Server, MongoDB, Redis, Rest API, Jest, Supertest, Bcrypt, JWT, Zod
+Back End: Node JS, Bun, Nest, Hono, Elysia, Express, Sequelize, PostgreSQL, GORM, MySQL, MariaDB, GraphQL, Apollo Server, MongoDB, Redis, Rest API, Jest, Supertest, Bcrypt, JWT, Zod
 
 
 PROJECTS
