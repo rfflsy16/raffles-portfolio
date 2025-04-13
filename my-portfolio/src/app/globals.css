@@ -61,3 +61,43 @@
 .card-hover {
   @apply transform transition-all duration-300 hover:-translate-y-2 hover:shadow-lg;
 }
+
+.neo-brutalism-white {
+    @apply relative bg-transparent text-blue-400 px-4 py-2 rounded-lg 
+           font-semibold border-2 border-blue-500
+           shadow-[4px_4px_0px_0px_rgba(59,130,246,0.3)]
+           active:shadow-[2px_2px_0px_0px_rgba(59,130,246,0.3)]
+           active:translate-x-[2px]
+           active:translate-y-[2px]
+           transition-all duration-150
+           hover:bg-blue-500/10
+           hover:shadow-[6px_6px_0px_0px_rgba(59,130,246,0.3)];
+}
+
+/* Update Modern Card Style */
+.modern-card {
+    @apply bg-gray-900/30 backdrop-blur-lg border border-white/10 
+           shadow-[0_8px_32px_rgba(0,0,0,0.37)] 
+           hover:shadow-[0_8px_32px_rgba(59,130,246,0.2)]
+           transition-all duration-500
+           rounded-xl overflow-hidden;
+}
+
+/* Update Modern Badge Style */
+.modern-badge {
+    @apply bg-blue-500/10 text-blue-300 border border-blue-400/20 
+           backdrop-blur-sm hover:bg-blue-500/20 
+           transition-all duration-300
+           text-xs font-medium px-2.5 py-1 rounded-full;
+}
+
+/* Update Timeline Gradient */
+.timeline-gradient {
+    background: linear-gradient(180deg, 
+        rgba(59,130,246,0.1) 0%,
+        rgba(139,92,246,0.3) 50%,
+        rgba(59,130,246,0.1) 100%
+    );
+    animation: gradientFlow 4s ease infinite;
+    box-shadow: 0 0 15px rgba(59,130,246,0.2);
+}
