@@ -46,19 +46,19 @@ export default function ProjectSection() {
                             
                             {/* Project Card */}
                             <div className={`w-full md:w-1/2 ${index % 2 === 0 ? 'md:pr-16' : 'md:pl-16'}`}>
-                                <Card className="group overflow-hidden modern-card transform hover:-translate-y-1 transition-all duration-300">
+                                <Card className="overflow-hidden glass-card card-hover">
                                     {/* Image Container with Hover Effect */}
-                                    <div className="relative h-64 md:h-72 w-full overflow-hidden">
+                                    <div className="relative h-64 md:h-72 w-full">
                                         <Image
                                             src={project.image}
                                             alt={project.title}
                                             fill
-                                            className="object-cover transform group-hover:scale-110 transition-transform duration-700"
+                                            className="object-cover"
                                         />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                                         
                                         {/* Floating Date Badge */}
-                                        <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-md px-4 py-2 rounded-full border border-white/10">
+                                        <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-md px-4 py-2 rounded-lg border border-white/10">
                                             <div className="flex items-center gap-2 text-blue-300">
                                                 <Calendar className="w-4 h-4" />
                                                 <span className="text-sm font-medium">{project.date}</span>
@@ -66,12 +66,12 @@ export default function ProjectSection() {
                                         </div>
                                     </div>
 
-                                    <div className="relative p-6 md:p-8 bg-gradient-to-b from-gray-900/50 to-gray-900/80">
+                                    <div className="p-8">
                                         {/* Content */}
                                         <h3 className="text-2xl font-bold mb-4 gradient-text">
                                             {project.title}
                                         </h3>
-                                        <p className="text-gray-300 mb-6 line-clamp-3">{project.description}</p>
+                                        <p className="text-gray-300 mb-6">{project.description}</p>
                                         
                                         {/* Tech Stack */}
                                         <div className="flex flex-wrap gap-2 mb-6">
@@ -79,7 +79,7 @@ export default function ProjectSection() {
                                                 <Badge 
                                                     key={tech} 
                                                     variant="secondary" 
-                                                    className="modern-badge"
+                                                    className="backdrop-blur-sm bg-black-500/20 border border-blue-400/50 text-white rounded-md"
                                                 >
                                                     {tech}
                                                 </Badge>
@@ -91,7 +91,7 @@ export default function ProjectSection() {
                                             <Link href={project.link} className="w-full">
                                                 <Button 
                                                     variant="outline"
-                                                    className="w-full neo-brutalism-white"
+                                                    className="w-full backdrop-blur-sm bg-blue-500/20 border-blue-400/50 hover:bg-blue-500/30 text-white font-medium transition-all duration-300 hover:scale-[1.02] hover:shadow-blue-500/20 hover:shadow-lg"
                                                 >
                                                     <ExternalLink className="mr-2 h-4 w-4"/> Live Demo
                                                 </Button>
@@ -99,7 +99,7 @@ export default function ProjectSection() {
                                             <Link href={project.code} className="w-full">
                                                 <Button 
                                                     variant="outline"
-                                                    className="w-full neo-brutalism-white"
+                                                    className="w-full backdrop-blur-sm bg-purple-500/20 border-purple-400/50 hover:bg-purple-500/30 text-white font-medium transition-all duration-300 hover:scale-[1.02] hover:shadow-purple-500/20 hover:shadow-lg"
                                                 >
                                                     <Code className="mr-2 h-4 w-4" /> Source Code
                                                 </Button>
