@@ -108,6 +108,15 @@ export const projects = [
     code: 'https://github.com/rfflsy16/badminton-court-booking-project'
   },
   {
+    title: "GlanceFit",
+    description: "A comprehensive fitness app featuring workout tracking, nutrition planning, social features, and AI-powered personalized recommendations.",
+    tech: ["React Native", "Expo", "TypeScript", "React Query", "React Navigation", "Context", "MariaDB", "Hono", "JWT"],
+    date: "January 2025",
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    link: 'https://github.com/rfflsy16/glance-fit-rn',
+    code: 'https://github.com/rfflsy16/glance-fit-rn'
+  },
+  {
     title: "Tokopedia-clone",
     description: "A web-based e-commerce application inspired by Tokopedia.",
     tech: ["React", "Vercel", "TypeScript", "Zod Validation", "MongoDB", "Next.js"],
@@ -143,15 +152,6 @@ export const projects = [
     link: 'https://github.com/rfflsy16/travelex-individual-project',
     code: 'https://github.com/rfflsy16/travelex-individual-project'
   },
-  {
-    title: "GlanceFit",
-    description: "A comprehensive fitness app featuring workout tracking, nutrition planning, social features, and AI-powered personalized recommendations.",
-    tech: ["React Native", "Expo", "TypeScript", "React Query", "React Navigation", "Context", "MariaDB", "Hono", "JWT"],
-    date: "January 2025",
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    link: 'https://github.com/rfflsy16/glance-fit-rn',
-    code: 'https://github.com/rfflsy16/glance-fit-rn'
-  }
 ];
 
 export const education = [
