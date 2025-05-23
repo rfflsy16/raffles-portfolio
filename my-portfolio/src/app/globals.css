@@ -3,25 +3,25 @@
 @tailwind utilities;
 
 :root {
-  --background: 230 30% 8%;
-  --foreground: 210 20% 98%;
-  --card: 224 71% 4%;
-  --card-foreground: 213 31% 91%;
-  --popover: 224 71% 4%;
-  --popover-foreground: 215 20% 65%;
-  --primary: 210 40% 98%;
-  --primary-foreground: 222.2 47.4% 1.2%;
-  --secondary: 222.2 47.4% 11.2%;
-  --secondary-foreground: 210 40% 98%;
-  --muted: 223 47% 11%;
-  --muted-foreground: 215.4 16.3% 56.9%;
-  --accent: 216 34% 17%;
-  --accent-foreground: 210 40% 98%;
-  --destructive: 0 63% 31%;
-  --destructive-foreground: 210 40% 98%;
-  --border: 216 34% 17%;
-  --input: 216 34% 17%;
-  --ring: 216 34% 17%;
+  --background: 210 30% 8%;
+  --foreground: 190 100% 96%;
+  --card: 210 30% 6%;
+  --card-foreground: 190 90% 92%;
+  --popover: 210 30% 6%;
+  --popover-foreground: 190 50% 85%;
+  --primary: 180 80% 50%;
+  --primary-foreground: 210 20% 10%;
+  --secondary: 150 85% 50%;
+  --secondary-foreground: 210 20% 10%;
+  --muted: 210 25% 16%;
+  --muted-foreground: 190 30% 75%;
+  --accent: 150 80% 45%;
+  --accent-foreground: 210 20% 10%;
+  --destructive: 0 80% 50%;
+  --destructive-foreground: 190 100% 96%;
+  --border: 180 40% 25%;
+  --input: 180 40% 25%;
+  --ring: 180 70% 45%;
   --radius: 0.5rem;
 }
 
@@ -35,15 +35,15 @@
 }
 
 .glass-card {
-  @apply bg-card/30 backdrop-blur-md border border-white/10 shadow-xl;
+  @apply bg-card/30 backdrop-blur-md border border-primary/20 shadow-xl;
 }
 
 .gradient-text {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
 }
 
 .hover-glow {
-  @apply transition-all duration-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.5)];
+  @apply transition-all duration-300 hover:shadow-[0_0_20px_rgba(56,224,231,0.6)];
 }
 
 .section-padding {
@@ -63,30 +63,30 @@
 }
 
 .neo-brutalism-white {
-    @apply relative bg-transparent text-blue-400 px-4 py-2 rounded-lg 
-           font-semibold border-2 border-blue-500
-           shadow-[4px_4px_0px_0px_rgba(59,130,246,0.3)]
-           active:shadow-[2px_2px_0px_0px_rgba(59,130,246,0.3)]
+    @apply relative bg-transparent text-primary px-4 py-2 rounded-lg 
+           font-semibold border-2 border-primary
+           shadow-[4px_4px_0px_0px_rgba(56,224,231,0.4)]
+           active:shadow-[2px_2px_0px_0px_rgba(56,224,231,0.4)]
            active:translate-x-[2px]
            active:translate-y-[2px]
            transition-all duration-150
-           hover:bg-blue-500/10
-           hover:shadow-[6px_6px_0px_0px_rgba(59,130,246,0.3)];
+           hover:bg-primary/15
+           hover:shadow-[6px_6px_0px_0px_rgba(56,224,231,0.4)];
 }
 
 /* Update Modern Card Style */
 .modern-card {
-    @apply bg-gray-900/30 backdrop-blur-lg border border-white/10 
+    @apply bg-card/30 backdrop-blur-lg border border-primary/20 
            shadow-[0_8px_32px_rgba(0,0,0,0.37)] 
-           hover:shadow-[0_8px_32px_rgba(59,130,246,0.2)]
+           hover:shadow-[0_8px_32px_rgba(56,224,231,0.25)]
            transition-all duration-500
            rounded-xl overflow-hidden;
 }
 
 /* Update Modern Badge Style */
 .modern-badge {
-    @apply bg-blue-500/10 text-blue-300 border border-blue-400/20 
-           backdrop-blur-sm hover:bg-blue-500/20 
+    @apply bg-accent/10 text-accent border border-accent/20 
+           backdrop-blur-sm hover:bg-accent/20 
            transition-all duration-300
            text-xs font-medium px-2.5 py-1 rounded-full;
 }
@@ -94,10 +94,10 @@
 /* Update Timeline Gradient */
 .timeline-gradient {
     background: linear-gradient(180deg, 
-        rgba(59,130,246,0.1) 0%,
-        rgba(139,92,246,0.3) 50%,
-        rgba(59,130,246,0.1) 100%
+        rgba(56,224,231,0.15) 0%,
+        rgba(72,226,172,0.3) 50%,
+        rgba(56,224,231,0.15) 100%
     );
     animation: gradientFlow 4s ease infinite;
-    box-shadow: 0 0 15px rgba(59,130,246,0.2);
+    box-shadow: 0 0 15px rgba(56,224,231,0.25);
 }

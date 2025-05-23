@@ -128,7 +128,7 @@ export default function AiChats({ isOpen, onClose }: AiChatsProps) {
         >
             <div className="space-y-6">
                 <motion.h3 
-                    className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400"
+                    className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"
                     initial={{ scale: 0.9 }}
                     animate={{ scale: 1 }}
                     transition={{ duration: 0.5 }}
@@ -154,7 +154,7 @@ export default function AiChats({ isOpen, onClose }: AiChatsProps) {
                         {aiQuestions.map((question, index) => (
                             <motion.div
                                 key={index}
-                                className="glass-card p-3 rounded-xl text-sm text-gray-400 cursor-pointer hover:bg-blue-500/10 hover:text-blue-400 transition-all duration-300"
+                                className="glass-card p-3 rounded-xl text-sm text-gray-400 cursor-pointer hover:bg-primary/10 hover:text-primary transition-all duration-300"
                                 whileHover={{ scale: 1.02, x: 5 }}
                                 onClick={() => {
                                     setMessage(question);
@@ -193,15 +193,15 @@ export default function AiChats({ isOpen, onClose }: AiChatsProps) {
                 whileTap={{ scale: 0.98 }}
                 className={`max-w-[80%] p-4 rounded-2xl ${
                     chat.role === 'user'
-                        ? 'bg-gradient-to-r from-blue-500/30 to-purple-500/30 text-blue-200 border border-blue-500/30 rounded-br-sm'
+                        ? 'bg-gradient-to-r from-primary/30 to-secondary/30 text-white border border-primary/30 rounded-br-sm'
                         : 'glass-card text-gray-200 border border-white/20 rounded-bl-sm px-5 py-4'  // Added more padding
                     }`}
             >
                 {chat.isTyping && chat.content === '' ? (
                     <div className="typing-animation flex justify-center items-center h-6">
-                        <span className="w-2 h-2 bg-blue-400 rounded-full mx-1"></span>
-                        <span className="w-2 h-2 bg-blue-400 rounded-full mx-1"></span>
-                        <span className="w-2 h-2 bg-blue-400 rounded-full mx-1"></span>
+                        <span className="w-2 h-2 bg-primary rounded-full mx-1"></span>
+                        <span className="w-2 h-2 bg-primary rounded-full mx-1"></span>
+                        <span className="w-2 h-2 bg-primary rounded-full mx-1"></span>
                     </div>
                 ) : (
                     <div className={`${chat.role === 'ai' ? 'ai-message-content prose prose-invert max-w-none' : ''}`}>
@@ -266,10 +266,10 @@ export default function AiChats({ isOpen, onClose }: AiChatsProps) {
                         >
                             {/* Header */}
                             <motion.div 
-                                className="flex justify-between items-center p-6 border-b border-white/10 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-blue-500/10"
+                                className="flex justify-between items-center p-6 border-b border-white/10 bg-gradient-to-r from-primary/5 to-secondary/5"
                                 initial={false}
                                 animate={{
-                                    background: ['linear-gradient(90deg, rgba(59, 130, 246, 0.1) 0%, rgba(168, 85, 247, 0.1) 50%, rgba(59, 130, 246, 0.1) 100%)'],
+                                    background: ['linear-gradient(90deg, rgba(56, 224, 231, 0.05) 0%, rgba(72, 226, 172, 0.05) 50%, rgba(56, 224, 231, 0.05) 100%)'],
                                 }}
                                 transition={{
                                     background: { duration: 3, repeat: Infinity },
@@ -277,7 +277,7 @@ export default function AiChats({ isOpen, onClose }: AiChatsProps) {
                             >
                                 <div className="flex items-center gap-3">
                                     <motion.div 
-                                        className="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center"
+                                        className="w-10 h-10 rounded-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center"
                                         animate={{ 
                                             scale: [1, 1.1, 1],
                                             rotate: 360,
@@ -412,7 +412,7 @@ export default function AiChats({ isOpen, onClose }: AiChatsProps) {
 
                                 {/* Chat Input */}
                                 <motion.div 
-                                    className="p-6 border-t border-white/10 bg-gradient-to-r from-blue-500/5 to-purple-500/5"
+                                    className="p-6 border-t border-white/10 bg-gradient-to-r from-primary/5 to-secondary/5"
                                     initial={false}
                                     whileHover={{ backgroundColor: 'rgba(59, 130, 246, 0.1)' }}
                                 >
@@ -427,13 +427,13 @@ export default function AiChats({ isOpen, onClose }: AiChatsProps) {
                                                 value={message}
                                                 onChange={(e) => setMessage(e.target.value)}
                                                 placeholder="Ask me anything"
-                                                className="w-full p-4 pr-14 rounded-xl glass-card border border-white/10 focus:border-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-500/20 text-white placeholder:text-gray-400 transition-all duration-300"
+                                                className="w-full p-4 pr-14 rounded-xl glass-card border border-white/10 focus:border-primary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 text-white placeholder:text-gray-400 transition-all duration-300"
                                                 disabled={isLoading}
                                             />
                                             <Button
                                                 type="submit"
                                                 size="icon"
-                                                className="absolute right-2 top-1/2 -translate-y-1/2 rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white transition-all duration-300"
+                                                className="absolute right-2 top-1/2 -translate-y-1/2 rounded-lg bg-gradient-to-r from-primary to-secondary hover:from-primary/80 hover:to-secondary/80 text-white transition-all duration-300"
                                                 disabled={isLoading}
                                             >
                                                 <motion.div

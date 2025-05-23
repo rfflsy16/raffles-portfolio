@@ -39,8 +39,8 @@ export default function HeroSection() {
                         </motion.div>
 
                         {/* Profile Picture */}
-                        <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/50 via-purple-500/50 to-blue-500/50 blur-2xl opacity-75 group-hover:opacity-90" />
-                        <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white/10 group-hover:border-blue-500/20">
+                        <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/50 via-secondary/50 to-primary/50 blur-2xl opacity-75 group-hover:opacity-90" />
+                        <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white/10 group-hover:border-primary/30">
                             <Image
                                 src="/raffles-photo.webp"
                                 alt="Profile Photo"

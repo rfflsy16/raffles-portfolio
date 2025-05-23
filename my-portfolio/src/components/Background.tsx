@@ -26,7 +26,7 @@ const Background = () => {
       radius: Math.random() * 2 + 1,
       vx: (Math.random() - 0.5) * 0.5,
       vy: (Math.random() - 0.5) * 0.5,
-      hue: Math.random() * 60 + 200, // Blue to purple range
+      hue: Math.random() * 60 + 180, // Cyan to green range
     }));
 
     let mouseX = 0;
@@ -76,7 +76,7 @@ const Background = () => {
     };
 
     const animate = () => {
-      ctx.fillStyle = 'rgba(10, 10, 20, 0.1)';
+      ctx.fillStyle = 'rgba(10, 20, 30, 0.1)';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       particles.forEach(particle => {
@@ -118,7 +118,7 @@ const Background = () => {
     <canvas
       ref={canvasRef}
       className="fixed top-0 left-0 w-full h-full -z-10"
-      style={{ background: 'linear-gradient(135deg, #0a0a14 0%, #1a1a2e 100%)' }}
+      style={{ background: 'linear-gradient(135deg, #0a1a2c 0%, #102c42 100%)' }}
     />
   );
 };

@@ -91,7 +91,7 @@ export default function ProjectSection() {
                                             <Link href={project.link} className="w-full">
                                                 <Button 
                                                     variant="outline"
-                                                    className="w-full backdrop-blur-sm bg-blue-500/20 border-blue-400/50 hover:bg-blue-500/30 text-white font-medium transition-all duration-300 hover:scale-[1.02] hover:shadow-blue-500/20 hover:shadow-lg"
+                                                    className="w-full backdrop-blur-sm bg-primary/20 border-primary/40 hover:bg-primary/30 text-white font-medium transition-all duration-300 hover:scale-[1.02] hover:shadow-primary/30 hover:shadow-lg"
                                                 >
                                                     <ExternalLink className="mr-2 h-4 w-4"/> Live Demo
                                                 </Button>
@@ -99,7 +99,7 @@ export default function ProjectSection() {
                                             <Link href={project.code} className="w-full">
                                                 <Button 
                                                     variant="outline"
-                                                    className="w-full backdrop-blur-sm bg-purple-500/20 border-purple-400/50 hover:bg-purple-500/30 text-white font-medium transition-all duration-300 hover:scale-[1.02] hover:shadow-purple-500/20 hover:shadow-lg"
+                                                    className="w-full backdrop-blur-sm bg-secondary/20 border-secondary/40 hover:bg-secondary/30 text-white font-medium transition-all duration-300 hover:scale-[1.02] hover:shadow-secondary/30 hover:shadow-lg"
                                                 >
                                                     <Code className="mr-2 h-4 w-4" /> Source Code
                                                 </Button>
