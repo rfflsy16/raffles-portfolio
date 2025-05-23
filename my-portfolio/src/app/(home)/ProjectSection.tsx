@@ -39,8 +39,8 @@ export default function ProjectSection() {
                         >
                             {/* Timeline Node with Pulse Effect */}
                             <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 z-10">
-                                <div className="w-6 h-6 bg-blue-500 rounded-full timeline-node">
-                                    <div className="absolute inset-0 bg-blue-500 rounded-full animate-ping opacity-25"></div>
+                                <div className="w-6 h-6 bg-primary rounded-full timeline-node">
+                                    <div className="absolute inset-0 bg-primary rounded-full animate-ping opacity-25"></div>
                                 </div>
                             </div>
                             
