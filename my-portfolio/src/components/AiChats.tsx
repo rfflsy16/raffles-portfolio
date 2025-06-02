@@ -115,6 +115,14 @@ export default function AiChats({ isOpen, onClose }: AiChatsProps) {
             });
         } finally {
             setIsLoading(false);
+            setTimeout(() => {
+                const input = document.querySelector('input[type="text"]') as HTMLInputElement
+
+                if (input) {
+                    input.focus();
+                }
+                
+            }, 100)
         }
     };
 
@@ -429,6 +437,7 @@ export default function AiChats({ isOpen, onClose }: AiChatsProps) {
                                                 placeholder="Ask me anything"
                                                 className="w-full p-4 pr-14 rounded-xl glass-card border border-white/10 focus:border-primary/50 focus:outline-none focus:ring-2 focus:ring-primary/20 text-white placeholder:text-gray-400 transition-all duration-300"
                                                 disabled={isLoading}
+                                                autoFocus
                                             />
                                             <Button
                                                 type="submit"
