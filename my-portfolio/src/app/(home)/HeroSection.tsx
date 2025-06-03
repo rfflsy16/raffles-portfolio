@@ -4,11 +4,28 @@ import { Github, Linkedin, Mail, MapPin, MessageSquareMore } from "lucide-react"
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import AiChats from '@/components/AiChats';
 
 export default function HeroSection() {
     const [isAiChatOpen, setIsAiChatOpen] = useState(false);
+
+    useEffect(() => {
+        const handleKeyDown = (e: KeyboardEvent) => {
+            if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+                e.preventDefault();
+                setIsAiChatOpen(prev => !prev);
+            }
+
+            // Also handle Escape key to close the chat
+            if (e.key === 'Escape' && isAiChatOpen) {
+                setIsAiChatOpen(false);
+            }
+        };
+
+        document.addEventListener('keydown', handleKeyDown);
+        return () => document.removeEventListener('keydown', handleKeyDown);
+    }, [isAiChatOpen]);
 
     return (
         <>
