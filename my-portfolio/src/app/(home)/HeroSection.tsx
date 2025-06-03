@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import AiChats from '@/components/AiChats';
+import { KeyboardShortcut } from '@/components/KeyboardShortcut';
 
 export default function HeroSection() {
     const [isAiChatOpen, setIsAiChatOpen] = useState(false);
@@ -106,6 +107,7 @@ export default function HeroSection() {
             </section>
             
             <AiChats isOpen={isAiChatOpen} onClose={() => setIsAiChatOpen(false)} />
+            <KeyboardShortcut />
         </>
     );
 }
