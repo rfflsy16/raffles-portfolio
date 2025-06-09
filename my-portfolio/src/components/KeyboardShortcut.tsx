@@ -26,7 +26,7 @@ export function KeyboardShortcut() {
                     initial={{ opacity: 0, y: -20, x: 20 }}
                     animate={{ opacity: 1, y: 0, x: 0 }}
                     exit={{ opacity: 0, x: 20 }}
-                    className="fixed top-4 right-4 bg-gradient-to-r from-primary/10 to-secondary/10 backdrop-blur-md rounded-lg border border-white/10 p-4 text-gray-300 shadow-2xl z-50"
+                    className="hidden md:block fixed top-4 right-4 bg-gradient-to-r from-primary/10 to-secondary/10 backdrop-blur-md rounded-lg border border-white/10 p-4 text-gray-300 shadow-2xl z-50"
                 >
                     <div className="flex flex-col items-center gap-3">
                         <div className="flex items-center gap-2 text-base">
