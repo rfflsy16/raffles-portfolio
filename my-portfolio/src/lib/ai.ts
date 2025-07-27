@@ -21,13 +21,13 @@ export default async function AI(messages: Message[]) {
                 'X-Title': 'Raffles Portfolio AI Assistant'
             },
             body: JSON.stringify({
-                model: 'deepseek/deepseek-r1:free',
+                model: 'meta-llama/llama-3.2-11b-vision-instruct:free',
                 messages: messages,
                 max_tokens: 2000, // Meningkatkan max_tokens dari 500 menjadi 2000
                 temperature: 0.7,
                 top_p: 0.9,
                 frequency_penalty: 0,
-                presence_penalty: 0
+                presence_penalty: 0,
             }),
         });
 
