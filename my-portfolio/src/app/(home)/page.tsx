@@ -1,4 +1,4 @@
-import HomePage from "./(sections)/HomePage";
+import HomePage from "./HomePage";
 
 export default function Home() {
   return (
